@@ -62,15 +62,15 @@ def run_one(args, n=0, m=0):
             )
             images[f"i_{i}"] = image_data
 
-    # Log all accumulated data at the end
-    for key, value in metrics.items():
-        run[key].log(value)
-    for key, value in params.items():
-        run[key].log(value)
-    for key, value in tables.items():
-        run[key].upload(File.as_html(value))
-    for key, value in images.items():
-        run[key].upload(File.as_image(value))
+        # Log all accumulated data at the end
+        for key, value in metrics.items():
+            run[key].log(value)
+        for key, value in params.items():
+            run[key].log(value)
+        for key, value in tables.items():
+            run[key].upload(File.as_html(value))
+        for key, value in images.items():
+            run[key].upload(File.as_image(value))
 
     run.stop()
 

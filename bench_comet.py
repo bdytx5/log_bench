@@ -252,19 +252,19 @@ def run_one(args, n=0, m=0):
             )
             images_list.append((f"image_{i}.png", image_data))
 
-    # Log all collected data at the end
-    for metrics in metrics_list:
-        experiment.log_metrics(metrics)
+        # Log all collected data at the end
+        for metrics in metrics_list:
+            experiment.log_metrics(metrics)
 
-    for table_name, table_data in tables_list:
-        experiment.log_table(table_name, table_data)
-        
-    for image_name, image_data in images_list:
-        experiment.log_image(
-            image_data=image_data,
-            name=image_name,
-            image_format="png"
-        )
+        for table_name, table_data in tables_list:
+            experiment.log_table(table_name, table_data)
+            
+        for image_name, image_data in images_list:
+            experiment.log_image(
+                image_data=image_data,
+                name=image_name,
+                image_format="png"
+            )
 
     experiment.end()
 

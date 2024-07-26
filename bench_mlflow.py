@@ -86,7 +86,7 @@ def run_one(args, n=0, m=0):
         mlflow.log_metrics(metrics)
         mlflow.log_params(params)
         for artifact_path in artifacts:
-            mlflow.log_artifact(artifact_path)
+            mlflow.log_artifact(artifact_path) # use log artifacts 
 
     mlflow.end_run()
 
