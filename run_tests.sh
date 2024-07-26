@@ -1,7 +1,7 @@
 #!/bin/bash
 # Set environment variables
-export COMET_API_KEY="eWOKYE67rEv78ujRdOvjwT7Mw"  # Your actual Comet API key
-export NEPTNUNE_API_TOKEN="eyJhcGlfYWRkcmVzcyI6Imh0dHBzOi8vYXBwLm5lcHR1bmUuYWkiLCJhcGlfdXJsIjoiaHR0cHM6Ly9hcHAubmVwdHVuZS5haSIsImFwaV9rZXkiOiIxNGI0NjhiNi1kYWE2LTQzYjEtYWI3NC0wMzczZjBiNjdiZjgifQ=="
+export COMET_API_KEY=""  # Your actual Comet API key
+export NEPTNUNE_API_TOKEN=""
 export NEPTUNE_PROJECT="byyoung3/testing"
 export MLFLOW_TRACKING_URI="http://34.143.244.32:5000"
 
