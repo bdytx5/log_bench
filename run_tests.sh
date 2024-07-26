@@ -39,11 +39,11 @@ if $clear_results; then
     rm -rf ./results/*
 fi
 
-# # Run benchmark scripts for each profile
-# for p in ${profiles[@]}
-# do
-#     python ./bench_comet.py --test_profile "$p"
-# done
+# Run benchmark scripts for each profile
+for p in ${profiles[@]}
+do
+    python ./bench_comet.py --test_profile "$p"
+done
 
 
 for p in ${profiles[@]}
@@ -51,20 +51,20 @@ do
     python ./bench_neptune.py --test_profile "$p"
 done
 
-# for p in ${profiles[@]}
-# do
-#     python ./bench_mlflow.py --test_profile "$p"
-# done
+for p in ${profiles[@]}
+do
+    python ./bench_mlflow.py --test_profile "$p"
+done
 
-# for p in ${profiles[@]}
-# do
-#     python ./bench_wandb.py --test_profile "$p"
-# done
+for p in ${profiles[@]}
+do
+    python ./bench_wandb.py --test_profile "$p"
+done
 
-# for p in ${profiles[@]}
-# do
-#     python ./bench_wandb_core.py --test_profile "$p"
-# done
+for p in ${profiles[@]}
+do
+    python ./bench_wandb_core.py --test_profile "$p"
+done
 
 python aggregate_and_log_res.py
 
