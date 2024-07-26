@@ -1,0 +1,110 @@
+{
+    "variants": {
+        "mode=offline": {
+            "mode": "offline"
+        }
+    },
+    "profiles": {
+        "v1-empty": {
+            "variants": {
+                "mode": ["offline"]
+            }
+        },
+        "v1-scalars": {
+            "all": {
+                "history_floats": 100,
+                "num_parallel": 10,
+                "num_history": 100
+            },
+            "variants": {
+                "mode": ["offline"]
+            }
+        },
+        "v1-tables": {
+            "all": {
+                "history_tables": 20,
+                "num_history": 10
+            },
+            "variants": {
+                "mode": ["offline"]
+            }
+        },
+        "v1-images": {
+            "all": {
+                "history_images": 10,
+                "history_images_dim": 16,
+                "num_parallel": 10,
+                "num_history": 50
+            },
+            "variants": {
+                "mode": ["offline"]
+            }
+        },
+        "v1-mixed": {
+            "all": {
+                "history_floats": 50,
+                "history_tables": 10,
+                "history_images": 5,
+                "history_images_dim": 16,
+                "num_parallel": 5,
+                "num_history": 20
+            },
+            "variants": {
+                "mode": ["offline"]
+            }
+        },
+        "v1-large-scalars": {
+            "all": {
+                "history_floats": 1000,
+                "num_parallel": 10,
+                "num_history": 1000
+            },
+            "variants": {
+                "mode": ["offline"]
+            }
+        },
+        "v1-large-tables": {
+            "all": {
+                "history_tables": 100,
+                "num_history": 50
+            },
+            "variants": {
+                "mode": ["offline"]
+            }
+        },
+        "v1-high-res-images": {
+            "all": {
+                "history_images": 10,
+                "history_images_dim": 64,
+                "num_parallel": 10,
+                "num_history": 50
+            },
+            "variants": {
+                "mode": ["offline"]
+            }
+        },
+        "v1-complex": {
+            "all": {
+                "history_floats": 100,
+                "history_tables": 50,
+                "history_images": 20,
+                "history_images_dim": 32,
+                "num_parallel": 20,
+                "num_history": 100
+            },
+            "variants": {
+                "mode": ["offline"]
+            }
+        },
+        "v1-strings": {
+            "all": {
+                "history_strings": 100,
+                "num_parallel": 10,
+                "num_history": 100
+            },
+            "variants": {
+                "mode": ["offline"]
+            }
+        }
+    }
+}
